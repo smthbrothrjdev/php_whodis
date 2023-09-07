@@ -1,0 +1,21 @@
+version: '3.1'
+
+services:
+  php:
+    container_name: php
+    image: php:8.1-fpm
+    volumes:
+      - ./src:/src
+
+  nginx:
+    container_name: nginx
+    image: nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./src:/src
+
+  db:
+    container_name: postgres
+    environment:
