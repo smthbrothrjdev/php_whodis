@@ -115,3 +115,8 @@ fabric.properties
 .idea/**/azureSettings.xml
 
 # End of https://www.toptal.com/developers/gitignore/api/phpstorm
+/.idea/.gitignore
+/.idea/modules.xml
+/.idea/php.xml
+/.idea/php_whodis.iml
+/.idea/vcs.xml
